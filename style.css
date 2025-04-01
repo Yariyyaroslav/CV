@@ -1,28 +1,28 @@
-*{
+* {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     transition: all 0.3s linear;
 }
-.wrap{
+
+.wrap {
     width: 100%;
     min-width: 320px;
     max-width: 1200px;
-    min-height: 90vh;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     background: #ffffff;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
 /* header */
-header{
+header {
     flex-basis: 70px;
     background-color: gray;
     border-radius: 10px;
@@ -30,46 +30,55 @@ header{
     padding: 20px 40px;
     margin: 0 0 20px 0;
 }
-.head{
-    
-    display:block;
+
+.head {
+
+    display: block;
     height: 30px;
 }
-.head ul{
+
+.head ul {
     float: right;
     list-style-type: none;
 }
-.head ul li{
+
+.head ul li {
     margin: 3px 0;
     font-size: 1.2em;
     display: inline-block;
     margin-left: 10px;
 }
-.name{
-    
+
+.name {
+
     float: left;
     font-size: 1.5em;
-    
+
 }
-a{
+
+a {
     color: #fff;
     text-decoration: none;
 
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-.menu{
-    display: none; 
-    
+
+.menu {
+    display: none;
+
     float: right;
     width: 50px;
 }
-.menu img{
+
+.menu img {
     width: 100%;
 }
-.card{
+
+.card {
     border: 2px solid rgb(196, 196, 196);
     padding: .5em;
     text-align: center;
@@ -77,18 +86,21 @@ a:hover{
     position: absolute;
     background-color: gray;
     right: 5%;
-    top:15%;
+    top: 15%;
     border-radius: 10px;
     transform: scale(0);
 }
-.card ul{
+
+.card ul {
     list-style-type: none;
 }
-.card li{
+
+.card li {
     margin: 0 15px;
     display: inline-block;
 }
-.menu:hover .card{
+
+.menu:hover .card {
     transform: scale(1);
 }
 
@@ -97,21 +109,24 @@ a:hover{
 
 
 
-main{
+main {
     gap: 30px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-    
+
 }
-.aside{
+
+.aside {
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+
 }
-.photo{
+
+.photo {
     border: 3px solid grey;
     border-radius: 10px;
     display: flex;
@@ -119,12 +134,13 @@ main{
     align-items: center;
 }
 
-.photo img{
+.photo img {
     width: 100%;
     display: inline-block;
     border-radius: 10px;
 }
-.skills{
+
+.skills {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -135,27 +151,32 @@ main{
     border-radius: 10px;
 }
 
-.skills>h1{
+.skills>h1 {
     font-size: 1.5em;
     color: rgb(161, 161, 161);
 }
-.skills>h2{
+
+.skills>h2 {
     margin: 20px;
     font-size: 1.5em;
     color: rgb(63, 63, 63);
 }
-.images{
+
+.images {
     width: 130px;
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
 }
-.images>img{
+
+.images>img {
     width: 50%;
 }
-.ill{
+
+.ill {
     padding: 4px;
 }
-.contacts{
+
+.contacts {
     text-align: center;
     padding: 30px;
     flex-basis: 20%;
@@ -165,63 +186,117 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.contacts img{
+
+.contacts img {
     width: 50px;
 }
-.contacts a{
+
+.contacts a {
     width: 50px;
     height: 50px;
 }
-.contacts>h2{
+
+.contacts>h2 {
     margin: 15px;
     font-size: 1.5em;
     color: rgb(63, 63, 63);
 }
-.contacts span{
+
+.contacts span {
     display: inline-block;
     font-size: 1.5em;
     color: rgb(63, 63, 63);
 }
 
-.add{
+.add {
     text-align: center;
     display: none;
 }
+
+
+
 /* main section */
 
 
 
-section{
+section {
     display: flex;
     gap: 20px;
     flex-direction: column;
     align-items: center;
-    flex-basis:50%;
+    flex-basis: 50%;
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+section>h1 {
+    font-size: 1.2em;
+    color: rgb(161, 161, 161);
+}
+
+section>p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+section>p img {
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.life {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+    flex-basis: 25%;
     border: 3px solid grey;
     border-radius: 10px;
     padding: 30px;
 }
-h1{
-    font-size: 1.5em;
-    color: rgb(161, 161, 161);
+.wrapHobby{
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-section>p{
+
+.life>h1 {
     text-align: center;
     font-size: 1.2em;
-}
-.life{
-    flex-basis:30%;
-    border: 3px solid grey;
-    border-radius: 10px;
-    padding: 30px;
-}
-.life>h1{
-    text-align: center;
-    
-    font-size: 1.5em;
     color: rgb(161, 161, 161);
 }
-footer{
+
+.hobbys p {
+    width: 200px;
+    text-align: center;
+
+}
+
+.life img {
+    align-items: center;
+    max-width: 200px;
+}
+
+
+
+/* footer */
+
+
+
+
+footer {
     margin-bottom: 20px;
     font-size: 1.2em;
     display: flex;
@@ -230,65 +305,108 @@ footer{
     text-align: center;
     gap: 10px;
 }
-footer a{
 
-}
-footer img{
+
+footer img {
     width: 40px;
 }
-footer span{
+
+footer span {
     display: inline-block;
 }
-@media only screen and (max-width: 1200px){
-}
-@media only screen and (max-width: 948px) {
-    .life{
+
+
+
+@media only screen and (max-width: 1150px) {
+    .life {
         display: none;
     }
-    section{
-        flex-basis: 70%;
+
+    section {
+        flex-basis: 75%;
     }
 }
-@media only screen and (max-width: 768px) {
-    main{
+
+@media only screen and (max-width: 900px) {
+    main {
         flex-direction: column;
     }
-    .photo,.skills{
+
+    .photo,
+    .skills {
         flex-basis: 50%;
         font-size: 1.5em;
     }
-    .aside{
+
+    .aside {
         flex-direction: row;
     }
-    
-    .contacts{
+
+    .contacts {
         display: none;
     }
-    .add{
+
+    .add {
         flex-direction: column;
-        
         display: flex;
     }
-    .life{
+
+    .life {
         display: block;
     }
+
+    .wrapHobby {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hobbys {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
 @media only screen and (max-width: 650px) {
-    .nav{
+    .nav {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: inline-block;
     }
-    .head{
+
+    .head {
         display: inline-block;
         padding: 11px;
     }
-    
-    
+
+    section {
+        font-size: 1em;
+    }
+
+    section>p img {
+        max-width: 300px;
+    }
+
 }
+
 @media only screen and (max-width: 550px) {
-    .aside{
+    .aside {
         flex-direction: column;
+    }
+
+    section>p img {
+        display: none;
+    }
+    .life{
+        font-size: 1em;
+    }
+    .hobbys img{
+        display: none;
     }
 }
