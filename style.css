@@ -217,14 +217,18 @@ main {
 
 /* main section */
 
-
+.mainB{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-basis: 80%;
+}
 
 section {
     display: flex;
     gap: 20px;
     flex-direction: column;
     align-items: center;
-    flex-basis: 50%;
     border: 3px solid grey;
     border-radius: 10px;
     padding: 30px;
@@ -258,7 +262,6 @@ section>p img {
     flex-direction: column;
     align-items: center;
     font-size: 1.3em;
-    flex-basis: 25%;
     border: 3px solid grey;
     border-radius: 10px;
     padding: 30px;
@@ -284,7 +287,7 @@ section>p img {
 
 }
 
-.life img {
+.hobbys img {
     align-items: center;
     max-width: 200px;
 }
@@ -318,16 +321,43 @@ footer span {
 
 
 @media only screen and (max-width: 1150px) {
-    .life {
-        display: none;
+    main{
+        gap: 20px;
     }
-
+    .aside{
+        gap: 44px;
+    }
     section {
         flex-basis: 75%;
+        padding: 20px;
+    }
+    .mainB{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .wrapHobby {
+        gap: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hobbys {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .life{
+        padding: 20px;
+        gap: 10px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     main {
         flex-direction: column;
     }
@@ -351,24 +381,8 @@ footer span {
         display: flex;
     }
 
-    .life {
-        display: block;
-    }
 
-    .wrapHobby {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hobbys {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    
 }
 
 @media only screen and (max-width: 650px) {
@@ -392,6 +406,9 @@ footer span {
     section>p img {
         max-width: 300px;
     }
+    .life{
+        font-size: 1em;
+    }
 
 }
 
@@ -403,9 +420,7 @@ footer span {
     section>p img {
         display: none;
     }
-    .life{
-        font-size: 1em;
-    }
+    
     .hobbys img{
         display: none;
     }
